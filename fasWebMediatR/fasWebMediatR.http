@@ -1,0 +1,6 @@
+@fasWebMediatR_HostAddress = http://localhost:5063
+
+GET {{fasWebMediatR_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
