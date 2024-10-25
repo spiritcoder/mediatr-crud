@@ -11,7 +11,7 @@ public class UpdateUserHandler(IUserRepository userRepository): IRequestHandler<
     {
         var user = await userRepository.GetUserByIdAsync(request.Id);
         
-        if (user == null) return null; // User not found
+        if (user == null) return null;
 
         user.Name = request.Name;
         user.Email = request.Email;
